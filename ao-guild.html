@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Argentum Online - Web Panel</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="../../../../global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<link href="../../../../layout_1/LTR/default/full/Guild/pixel-art.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="../../../../global_assets/js/main/jquery.min.js"></script>
+	<script src="../../../../global_assets/js/main/bootstrap.bundle.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/loaders/blockui.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="../../../../global_assets/js/plugins/visualization/d3/d3.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/pickers/daterangepicker.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/dashboard.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/pages/dashboard/light/streamgraph.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/pages/dashboard/light/sparklines.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/pages/dashboard/light/lines.js"></script>	
+	<script src="../../../../global_assets/js/demo_charts/pages/dashboard/light/areas.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/pages/dashboard/light/donuts.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/pages/dashboard/light/bars.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/pages/dashboard/light/progress.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/pages/dashboard/light/heatmaps.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/pages/dashboard/light/pies.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/pages/dashboard/light/bullets.js"></script>
+	<script src="../../../../layout_1/LTR/default/full/Guild/pixel-art.js"></script>	
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-dark">
+		<div class="navbar-brand">
+			<a href="index.html" class="d-inline-block">
+				<img src="../../../../global_assets/images/logo_light.png" alt="">
+			</a>
+		</div>
+
+		<div class="d-md-none">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navbar-mobile">
+
+			<span class="ml-md-3 mr-md-auto"></span>
+
+			<ul class="navbar-nav">
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown language-switch">
+						<a class="navbar-nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+								<img src="../../../../global_assets/images/lang/es.png" class="img-flag mr-2" alt="">
+								Spanish
+							</a>
+						<div class="dropdown-menu">
+							<a href="javascript:void(0);" class="dropdown-item spanish active">
+								<img src="../../../../global_assets/images/lang/es.png" class="img-flag" alt="">
+								Spanish
+							</a>
+							<a href="javascript:void(0);" class="dropdown-item english">
+								<img src="../../../../global_assets/images/lang/gb.png" class="img-flag" alt="">
+								English
+							</a>
+							<a href="javascript:void(0);" class="dropdown-item portuguese">
+								<img src="../../../../global_assets/images/lang/ru.png" class="img-flag" alt="">
+								Portuguese
+							</a>
+						</div>
+					</li>
+				</ul>
+				<li class="nav-item dropdown dropdown-user">
+					<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
+						<img src="../../../../global_assets/images/demo/users/ao-image.png" class="rounded-circle mr-2" height="34" alt="">
+						<span>Nightw</span>
+					</a>
+
+					<div class="dropdown-menu dropdown-menu-right">
+						<a href="#" class="dropdown-item"><i class="icon-user-plus"></i> My profile</a>
+						<a href="#" class="dropdown-item"><i class="icon-lifebuoy"></i> Support</a>
+						<div class="dropdown-divider"></div>
+						<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Account settings</a>
+						<a href="#" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+
+			<!-- Sidebar mobile toggler -->
+			<div class="sidebar-mobile-toggler text-center">
+				<a href="#" class="sidebar-mobile-main-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a>
+				Navigation
+				<a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+			</div>
+			<!-- /sidebar mobile toggler -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+				<!-- User menu -->
+				<div class="sidebar-user">
+					<div class="card-body">
+						<div class="media">
+							<div class="mr-3">
+								<a href="#"><img src="../../../../global_assets/images/demo/users/ao-image.png" width="38" height="38" class="rounded-circle" alt=""></a>
+							</div>
+
+							<div class="media-body">
+								<div class="media-title font-weight-semibold">Nightw</div>
+								<div class="font-size-xs opacity-50">
+									<i class="icon-shield2"></i> &nbsp;Argentum Online
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /user menu -->
+				<!-- Main navigation -->
+				<div class="card card-sidebar-mobile">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+
+						<!-- Main -->
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Menu</div> <i class="icon-menu" title="Main"></i></li>
+						<li class="nav-item">
+							<a href="#" class="nav-link active">
+								<i class="icon-home4"></i>
+								<span>
+									Home
+								</span>
+							</a>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-law"></i> <span>Administration</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
+								<li class="nav-item"><a href="#" class="nav-link"><span>Dashboard</span></a></li>
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link">Game</a>
+									<ul class="nav nav-group-sub">
+										<li class="nav-item"><a href="#" class="nav-link">Pending Validations</a></li>
+									</ul>
+								</li>
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link">Support</a>
+									<ul class="nav nav-group-sub">
+										<li class="nav-item"><a href="#" class="nav-link">Open Tickets</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Departments</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Reps</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-users4"></i> <span>Account</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
+								<li class="nav-item"><a href="#" class="nav-link">Characters</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-cart2"></i> <span>Market</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
+								<li class="nav-item"><a href="#" class="nav-link">Characters</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">Items</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">AO-Coins</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="index.html" class="nav-link">
+								<i class="icon-chart"></i><span>Statistics</span>
+							</a>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-trophy3"></i> <span>Events</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
+								<li class="nav-item"><a href="#" class="nav-link">Calendar</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">Quests</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">Tournaments</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="index.html" class="nav-link">
+								<i class="icon-lifebuoy"></i><span>Support</span>
+							</a>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-info3"></i> <span>Information</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
+								<li class="nav-item"><a href="#" class="nav-link">Rules</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">Wiki</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">Downloads</a></li>
+							</ul>
+						</li>
+						
+					</ul>
+				</div>
+				<!-- /main navigation -->
+
+			</div>
+			<!-- /sidebar content -->
+			
+		</div>
+		<!-- /main sidebar -->
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+			<!-- Page header -->
+			<div class="page-header page-header-light">
+				<div class="page-header-content header-elements-md-inline">
+					<div class="page-title d-flex">
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Home</span> - Dashboard</h4>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+				</div>
+
+				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+					<div class="d-flex">
+						<div class="breadcrumb">
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+							<span class="breadcrumb-item active">Dashboard</span>
+						</div>
+
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
+
+			<!-- Content area -->
+
+			<div class="card">
+				<div class="card-body2">
+					<p>Diseña tu logo de clan</p>
+				</div>
+			</div>
+
+
+			<div class="container">
+
+				<aside>
+		
+					<form id="formulario">
+						<input type="hidden" id="canvasImage">
+					</form>
+		
+					<h3>Selección de color</h3>
+					<div class="colorPicker">
+							<input type="color" id="color-picker" value="#3b94e3" />
+							<br><br>
+							<div>							
+								<button type="button" id="draw" class="btn btn-primary">Dibujar</button>
+								<button type="button" id="erase" class="btn btn-primary">Borrar</button>
+							</div>
+							<br>
+							<div>
+								<button type="button" id="quick-fill" class="btn btn-primary">Llenar</button>
+								<button type="button" id="clearGrid" class="btn btn-primary">Borrar Todo</button>
+							</div>
+					</div>
+					<div>
+					<a id="botonDescarga">Descargar</a>
+					</div>
+						<br>
+					<div>
+						<button type="button" id="submit-button" class="btn bg-green-800">Confirmar</button>
+					</div>
+				</aside>
+		
+				<section class="main">
+					<canvas id="canvas1" width="608" height="608"></canvas>
+				</section>
+		
+			</div>
+
+
+			<!-- /content area -->
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						©  Argentum Online. All rights reserved
+						&copy; 2019. <a href="http://www.comunidadargentum.com" target="_blank">Argentum Online</a>
+					</span>
+
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item"><a href="#" class="navbar-nav-link" target="_blank"><i class="icon-lifebuoy mr-2"></i> Terms of Use</a></li>
+						<li class="nav-item"><a href="#" class="navbar-nav-link" target="_blank"><i class="icon-file-text2 mr-2"></i>Privacy Policy</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>
